@@ -47,6 +47,7 @@ const NavMenu = styled.div`
   display:flex;
   width:100%;
   transition: transform 300ms;
+  z-index:100;
   @media screen and (max-width:1024px)
   {
     padding-top: 25%;
@@ -130,7 +131,7 @@ const MenuIcon = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 5;
+  z-index: 100;
   &::after {
     outline: none;
   }

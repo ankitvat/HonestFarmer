@@ -1,0 +1,42 @@
+@import '../assets/fonts/fonts.css';
+@import './abstracts/_mixins.scss';
+@import './abstracts/variables.scss';
+$font1: 'Circular Black';
+$font2: 'Roobert-Medium';
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+
+  .banner-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 16%;
+    font-size: clamp(2rem, 5vw, 4.3rem);
+    font-family: $font1;
+
+    @include lg {
+      max-width: 70%;
+      margin-left: 2%;
+      z-index: -1;
+      line-height: 1.5;
+      text-align: center;
+      margin-top: 30%;
+    }
+  }
+  .banner-text {
+    font-family: $font2;
+    font-weight: 600;
+  }
+}

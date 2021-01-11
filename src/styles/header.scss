@@ -9,10 +9,14 @@ nav {
   height: 80px;
   display: flex;
   padding: 0.5rem calc((100vw - 1400px) / 2);
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  @include lg {
+    margin-top: -1%;
+  }
 }
 .nav-logo {
-  height: 80px;
+  height: 90px;
   width: 160px;
   display: flex;
   outline: none;
