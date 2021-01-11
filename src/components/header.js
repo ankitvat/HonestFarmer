@@ -47,7 +47,7 @@ const NavMenu = styled.div`
   display:flex;
   width:100%;
   transition: transform 300ms;
-  z-index:100;
+  z-index:1;
   @media screen and (max-width:1024px)
   {
     padding-top: 25%;
