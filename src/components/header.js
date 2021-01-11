@@ -69,7 +69,7 @@ const NavMenu = styled.div`
   @media screen and (max-width:576px)
   {
     width 100%;
-      transform:${({ nav }) => (nav ? 'translateX(0)' : 'translateX(100%)')};
+      transform:${({ nav }) => (nav ? 'translateX(20%)' : 'translateX(100%)')};
   }
 `
 const NavLink = styled(Link)`

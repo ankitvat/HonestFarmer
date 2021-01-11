@@ -1,0 +1,111 @@
+@import '../assets/fonts/fonts.css';
+@import './abstracts/_mixins.scss';
+@import './abstracts/variables.scss';
+$font1: 'Circular Black';
+$font2: 'Roobert-Medium';
+$grey: #363c4c;
+$darkgrey: #212529;
+$lightgrey1: #d1d9dc;
+$lightgreen: #bcd4bd;
+$lightbrown: #e6e2c7;
+$lightpurple: #d0cec9;
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  margin-top: 20%;
+  justify-content: center;
+
+  @include md {
+    flex-direction: column;
+  }
+  @include sm {
+    margin-top: 1%;
+  }
+  .upper-cards {
+    display: flex;
+    flex-direction: row;
+
+    @include md {
+      margin-top: -40%;
+      margin-left: 12%;
+    }
+    @include sm {
+      display: flex;
+      margin-left: 4.5%;
+    }
+
+    .card1 {
+      background: $lightgrey1;
+      width: 245px;
+      height: 311px;
+
+      overflow: visible;
+
+      @include md {
+        width: 255px;
+      }
+      @include sm {
+        width: 183px;
+        height: 226px;
+      }
+    }
+    .card2 {
+      background: $lightgreen;
+      width: 255px;
+      height: 311px;
+      margin-left: 10%;
+      overflow: visible;
+      @include sm {
+        width: 183px;
+        height: 226px;
+        margin-left: 5%;
+      }
+    }
+  }
+  .lower-cards {
+    display: flex;
+    flex-direction: row;
+
+    @include md {
+      margin-top: 10%;
+      margin-left: 2%;
+    }
+    @include sm {
+      margin-left: -6%;
+    }
+    .card3 {
+      background: $lightbrown;
+      width: 285px;
+      height: 311px;
+      margin-left: 10%;
+      overflow: visible;
+      @include md {
+        width: 255px;
+      }
+      @include sm {
+        width: 183px;
+        height: 231px;
+      }
+    }
+    .card4 {
+      background: $lightpurple;
+      width: 290px;
+      height: 311px;
+      margin-left: 10%;
+
+      overflow: visible;
+      @include md {
+        width: 255px;
+        margin-left: 9%;
+      }
+      @include sm {
+        width: 183px;
+        height: 231px;
+        margin-left: 4.5%;
+      }
+    }
+  }
+}
