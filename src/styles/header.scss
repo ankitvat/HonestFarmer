@@ -18,6 +18,9 @@ nav {
   @include lg {
     margin-top: -1%;
   }
+  @include xsm {
+    margin-top: -2%;
+  }
 }
 .nav-logo {
   height: 90px;

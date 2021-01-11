@@ -24,6 +24,10 @@ $lightpurple: #d0cec9;
   @include sm {
     margin-top: 1%;
   }
+  @include xsm {
+    display: flex;
+    margin-left: -2%;
+  }
   .upper-cards {
     display: flex;
     flex-direction: row;
@@ -78,7 +82,7 @@ $lightpurple: #d0cec9;
     }
     .card3 {
       background: $lightbrown;
-      width: 285px;
+      width: 280px;
       height: 311px;
       margin-left: 10%;
       overflow: visible;
@@ -92,7 +96,7 @@ $lightpurple: #d0cec9;
     }
     .card4 {
       background: $lightpurple;
-      width: 290px;
+      width: 285px;
       height: 311px;
       margin-left: 10%;
 
