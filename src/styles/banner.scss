@@ -3,6 +3,8 @@
 @import './abstracts/variables.scss';
 $font1: 'Circular Black';
 $font2: 'Roobert-Medium';
+$grey: #363c4c;
+$darkgrey: #212529;
 
 body,
 html {
@@ -23,7 +25,7 @@ html {
     align-items: center;
     position: relative;
     margin-top: 16%;
-    font-size: clamp(2rem, 5vw, 4.3rem);
+    font-size: clamp(2rem, 5.5vw, 4.3rem);
     font-family: $font1;
 
     @include lg {
@@ -34,9 +36,23 @@ html {
       text-align: center;
       margin-top: 30%;
     }
+    @include sm {
+      margin-top: 50%;
+    }
   }
   .banner-text {
     font-family: $font2;
     font-weight: 600;
+    font-size: clamp(1rem, 2vw, 1.6rem);
+    color: $darkgrey;
+    @include lg {
+      max-width: 50%;
+      line-height: 1.5;
+      margin-top: 2%;
+      text-align: center;
+    }
+    @include sm {
+      max-width: 80%;
+    }
   }
 }
