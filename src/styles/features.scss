@@ -2,15 +2,18 @@
 @import './abstracts/_mixins.scss';
 @import './abstracts/variables.scss';
 $font: 'Roobert-Medium';
+$font2: 'Circular Black';
 
-.features {
+.landing-control {
   display: flex;
-  flex-direction: column;
-  margin-top: -10%;
-  text-align: justify;
-  justify-content: center;
-  align-items: center;
-  .section {
-    max-width: 80%;
-  }
+}
+
+.image-block {
+  position: relative;
+  display: flex;
+  background-image: url('../images/ad.jpg');
+  height: 800px;
+  width: 800px;
+  z-index: -1;
+  margin-left: 50%;
 }

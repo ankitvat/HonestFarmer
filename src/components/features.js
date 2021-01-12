@@ -1,67 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/features.scss'
-import { Link } from 'gatsby'
 
-export default function Features() {
+const texts = [
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec pharetra quam. Curabitur condimentum tellus vel velit porttitor tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas rutrum venenatis. Integer facilisis convallis nisi, at condimentum lectus consequat id. Sed pretium metus quis lacus lobortis commodo. Cras volutpat mi vel diam convallis, ac convallis massa consectetur. Phasellus enim nunc, varius et eros vitae, faucibus elementum lectus. Suspendisse diam orci, porta vestibulum semper at, convallis ut orci. Nullam non tempor metus. Praesent quis mauris eu lectus sodales tempor. ',
+  'Quisque iaculis, odio quis lacinia vulputate, ligula metus vehicula arcu, sit amet iaculis enim leo in ligula. Vivamus condimentum finibus tortor, vel dapibus ex ultrices sit amet. Cras non mauris sed nisi viverra imperdiet. Ut aliquam tincidunt felis ut dictum. Curabitur ut tempus nulla. Proin at eleifend neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus tristique, enim et consectetur sodales, felis massa ultricies lectus, quis porta nunc enim non libero. ',
+  'Sed pellentesque dolor at consequat lobortis. Phasellus sollicitudin congue dui sit amet mollis. Quisque non lacus eu metus porta bibendum vitae et tellus. Proin ultricies odio lectus, id pulvinar neque volutpat id. Pellentesque vulputate lacinia elit, quis tincidunt turpis auctor at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vel orci sed purus rutrum tincidunt in vitae nisi. Duis dapibus aliquam sem, quis maximus orci faucibus eget. ',
+]
+
+const classes = ['green', 'blue', 'red']
+
+export default function Test() {
+  const [hovered, setHovered] = useState(-1)
+
   return (
-    <div className="features">
-      <div className="section">
-        <h1>Progressive Farmers</h1>
-        <p>
-          Our produce is grown from the best varieties of seeds, and irrigated
-          with clean ground water. We work with farmers who follow cutting-edge
-          farming techniques. The best of their harvest is delivered to you,
-          free from any pesticide residue. Our desi cows are free-range, grain &
-          grass-fed, and raised in cruelty-free pastures. Their calves get their
-          fair share of milk before we collect yours.
-        </p>
-        <Link to="#" className="features-btn">
-          Learn More
-        </Link>
+    <>
+      <div className={`landing-control ${classes[hovered]}`}>
+        <div className="landing-intro">
+          <div className="intro-content">
+            <div
+              role="presentation"
+              onMouseEnter={() => setHovered(0)}
+              onMouseLeave={() => setHovered(-1)}
+            >
+              Fresh apples, from the land of Karan Chauhan
+            </div>
+            <div
+              role="presentation"
+              onMouseEnter={() => setHovered(1)}
+              onMouseLeave={() => setHovered(-1)}
+            >
+              Hassle free. Free Delivery at your door step
+            </div>
+            <div
+              role="presentation"
+              onMouseEnter={() => setHovered(2)}
+              onMouseLeave={() => setHovered(-1)}
+            >
+              Pesticides and chemicals free
+            </div>
+          </div>
+        </div>
+        <div className="landing-ad">
+          <div className="ad-image">
+            {hovered === -1 ? (
+              <div className="image-block">
+                <h1 className="img-h1">Farmed Thoughtfully.</h1>
+              </div>
+            ) : (
+              <p>{texts[hovered]}</p>
+            )}
+          </div>
+        </div>
       </div>
-      <div className="section">
-        <h1>Tracable food</h1>
-        <p>
-          A QR code on the packaging tells you where your product came from, and
-          how long it took to reach you.
-        </p>
-      </div>
-      <div className="section">
-        <h1>Zero waste</h1>
-        <p>
-          All items with a short shelf life are procured after we receive
-          orders. Because we take the guess work out of consumer demand, we
-          never end up with more than we can sell. The result? Zero waste.
-        </p>
-      </div>
-      <div className="section">
-        <h1>Vedic practices</h1>
-        <p>
-          Our authentic Ayurvedic products are hand-crafted in Indian villages,
-          using traditional vedic recipes. Try our Bilona Ghee. Hand-churned
-          over low heat from probiotic curd, it retains most of its natural
-          nutrients.
-        </p>
-      </div>
-      <div className="section">
-        <h1>Relationship Manager</h1>
-        <p>
-          When you buy from us, you get an advocate within the company. To root
-          for you & solve your problems. Think of your Relationship Manager as
-          your voice at Honest Farmer.
-        </p>
-      </div>
-      <div className="section">
-        <h1>Seasonal produce</h1>
-        <p>
-          We don’t believe in cold storage. Flash-frozen veggies may be just as
-          nutritious as freshly-harvested ones, but they’re completely sapped of
-          their life force (sattva). If you’ve tasted both fresh peas & frozen
-          ones, you’ll know what we’re talking about. Sattvic food is, above
-          all, fresh. We bring to you the unforgettable feeling of biting into
-          fresh plant tissue
-        </p>
-      </div>
-    </div>
+    </>
   )
 }
