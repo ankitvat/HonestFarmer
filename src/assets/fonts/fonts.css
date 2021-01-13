@@ -18,3 +18,15 @@
   font-family: 'Raleway';
   src: url('./raleway.light.ttf');
 }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./ProximaNova-Regular.otf');
+}
+@font-face {
+  font-family: 'Proxima Thin';
+  src: url('./Proxima Nova Thin.otf');
+}
+@font-face {
+  font-family: 'Hk Grotesk';
+  src: url('./HKGrotesk-Medium.otf');
+}
