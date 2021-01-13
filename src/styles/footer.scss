@@ -5,25 +5,43 @@ $font1: 'Circular Black';
 $font2: 'Roobert-Medium';
 $grey: #363c4c;
 $darkgrey: #212529;
+$black: #191919;
 
 .footer {
   display: flex;
-  justify-content: space-around;
+
+  background: $black;
+  font-family: $font2;
+  text-decoration: none;
 }
 .footer-links {
   display: flex;
   flex-direction: column;
+  margin-left: 20%;
+  margin-top: 10%;
   font-family: 'Roobert-Medium';
   cursor: pointer;
   font-size: clamp(0.4em, 5vw, 1em);
-  font-weight: 600;
+
   text-decoration: none;
   line-height: 2;
-  Link {
-    color: black;
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
   }
 }
 .socials {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-top: 10%;
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: clamp(1rem, 5vw, 2rem);
+  }
 }

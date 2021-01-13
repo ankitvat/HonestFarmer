@@ -14,3 +14,7 @@
   font-family: 'Corsica-semibold';
   src: url('./CorsicaSX-SemiBold.ttf');
 }
+@font-face {
+  font-family: 'Raleway';
+  src: url('./raleway.light.ttf');
+}

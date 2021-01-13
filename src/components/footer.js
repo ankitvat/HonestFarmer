@@ -1,6 +1,10 @@
 import React from 'react'
 import '../styles/footer.scss'
 import { Link } from 'gatsby'
+import { AiOutlineLinkedin } from '@react-icons/all-files/ai/AiOutlineLinkedin'
+import { AiOutlineFacebook } from '@react-icons/all-files/ai/AiOutlineFacebook'
+import { AiOutlineInstagram } from '@react-icons/all-files/ai/AiOutlineInstagram'
+import { AiOutlineTwitter } from '@react-icons/all-files/ai/AiOutlineTwitter'
 
 export default function Footer() {
   return (
@@ -17,10 +21,18 @@ export default function Footer() {
         <Link to="#">Privacy Policy</Link>
       </div>
       <div className="socials">
-        <Link to="#">Instagram</Link>
-        <Link to="#">Facebook</Link>
-        <Link to="#">Linkedin</Link>
-        <Link to="#">Twitter</Link>
+        <Link to="#">
+          <AiOutlineFacebook />
+        </Link>
+        <Link to="#">
+          <AiOutlineInstagram />
+        </Link>
+        <Link to="#">
+          <AiOutlineLinkedin />
+        </Link>
+        <Link to="#">
+          <AiOutlineTwitter />
+        </Link>
       </div>
     </div>
   )
