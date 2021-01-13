@@ -6,6 +6,7 @@ import { AiOutlineFacebook } from '@react-icons/all-files/ai/AiOutlineFacebook'
 import { AiOutlineInstagram } from '@react-icons/all-files/ai/AiOutlineInstagram'
 import { AiOutlineTwitter } from '@react-icons/all-files/ai/AiOutlineTwitter'
 import { AiOutlineCopyright } from '@react-icons/all-files/ai/AiOutlineCopyright'
+import { BsArrowRight } from '@react-icons/all-files/bs/BsArrowRight'
 import logo from '../images/logo.png'
 import oldlogo from '../images/oldlogo.png'
 export default function Footer() {
@@ -13,6 +14,13 @@ export default function Footer() {
     <div className="footer">
       <div className="left-footer">
         <img src={logo} className="toplogo" alt="oldlogo" />
+        <img src={oldlogo} className="botlogo" alt="botlogo" />
+        <div className="go4lifelink">
+          <Link to="#" className="link">
+            Check it out
+          </Link>
+          <BsArrowRight className="arrow" />
+        </div>
       </div>
       <div className="right-footer">
         <div className="footer-links">
