@@ -52,7 +52,9 @@ export default function Test() {
                 </h1>
               </div>
             ) : (
-              <p className="text">{texts[hovered]}</p>
+              <div className="text">
+                <p>{texts[hovered]}</p>
+              </div>
             )}
           </div>
         </div>

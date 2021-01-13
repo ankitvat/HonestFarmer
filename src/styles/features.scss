@@ -40,10 +40,11 @@ $orange1: #ff8614;
 }
 
 .ad-image {
-  max-width: 60%;
-  padding: 20px;
+  max-width: 100%;
+
   transition: all 0.5s;
   position: relative;
+  text-align: justify;
 }
 .image-block {
   position: relative;
@@ -52,11 +53,8 @@ $orange1: #ff8614;
   height: 680px;
   width: 800px;
   z-index: -1;
-  margin-left: -20%;
+
   transition: all 0.5s;
-  &:hover {
-    transform: scale(1.5);
-  }
 
   .img-h1 {
     font-family: $font2;
@@ -70,8 +68,9 @@ $orange1: #ff8614;
   }
 }
 .text {
-  z-index: -1;
-  font-size: 5rem;
+  font-size: 1.5rem;
+
+  margin-right: 10%;
 }
 
 .green {
