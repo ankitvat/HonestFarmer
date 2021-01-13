@@ -7,12 +7,12 @@ import { AiOutlineInstagram } from '@react-icons/all-files/ai/AiOutlineInstagram
 import { AiOutlineTwitter } from '@react-icons/all-files/ai/AiOutlineTwitter'
 import { AiOutlineCopyright } from '@react-icons/all-files/ai/AiOutlineCopyright'
 import logo from '../images/logo.png'
-import oldlogo from '../assets/desktop.svg'
+import oldlogo from '../images/oldlogo.png'
 export default function Footer() {
   return (
     <div className="footer">
       <div className="left-footer">
-        <oldlogo className="oldlogo" />
+        <img src={logo} className="toplogo" alt="oldlogo" />
       </div>
       <div className="right-footer">
         <div className="footer-links">
