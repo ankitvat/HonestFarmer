@@ -3,11 +3,32 @@
 @import './abstracts/variables.scss';
 $font: 'Roobert-Medium';
 $font2: 'Circular Black';
+$lightgreen: #56ab2f;
+$blue1: #4286f4;
+$orange1: #ff8614;
 
 .landing-control {
   display: flex;
+
+  .landing-intro {
+    transition: all 0.5s;
+  }
+  .intro-content {
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  .hovertext {
+    transition: all 0.5s;
+  }
 }
 
+.ad-image {
+  max-width: 40%;
+  margin-left: 40%;
+}
 .image-block {
   position: relative;
   display: flex;
@@ -16,4 +37,32 @@ $font2: 'Circular Black';
   width: 800px;
   z-index: -1;
   margin-left: 50%;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.5);
+  }
+
+  .img-h1 {
+    font-family: $font2;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+  }
+}
+
+.green {
+  background: $lightgreen;
+  transition: all 0.5s;
+}
+.blue {
+  background: #4286f4;
+  transition: all 0.5s;
+}
+.red {
+  background: $orange1;
+  transition: all 0.5s;
 }
