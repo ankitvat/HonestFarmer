@@ -19,8 +19,12 @@ $black: #191919;
   text-decoration: none;
 
   .left-footer {
-    background: green;
     width: 40%;
+
+    .oldlogo {
+      z-index: 2;
+      display: block;
+    }
   }
   .right-footer {
     margin-top: 4%;
@@ -96,11 +100,11 @@ $black: #191919;
   }
   .social-footer {
     color: $grey;
-    margin-top: 20%;
+    margin-top: 30%;
     display: flex;
-    font-family: $font4;
+    font-family: $font1;
     font-size: 6px;
-    letter-spacing: 2px;
+
     margin-left: 5%;
 
     .icon {
