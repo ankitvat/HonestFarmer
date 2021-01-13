@@ -5,10 +5,12 @@ $font: 'Roobert-Medium';
 $font2: 'Circular Black';
 $lightgreen: #56ab2f;
 $blue1: #4286f4;
+$darkgrey: #212529;
 $orange1: #ff8614;
 
 .landing-control {
   display: flex;
+  z-index: -1;
 
   .landing-intro {
     transition: all 0.5s;
@@ -22,21 +24,35 @@ $orange1: #ff8614;
 
   .hovertext {
     transition: all 0.5s;
+    font-family: $font;
+    width: 800px;
+    height: 200px;
+    margin-left: -10%;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hovertext:nth-child(2) {
+    margin-top: 3px solid $darkgrey;
+  }
+
+  .hovertext:nth-child(3) {
   }
 }
 
 .ad-image {
-  max-width: 40%;
-  margin-left: 40%;
+  max-width: 60%;
+  padding: 20px;
+  transition: all 0.5s;
+  position: relative;
 }
 .image-block {
   position: relative;
   display: flex;
   background-image: url('../images/ad.jpg');
-  height: 800px;
+  height: 680px;
   width: 800px;
   z-index: -1;
-  margin-left: 50%;
+  margin-left: -20%;
   transition: all 0.5s;
   &:hover {
     transform: scale(1.5);
@@ -53,16 +69,23 @@ $orange1: #ff8614;
     margin-left: 25%;
   }
 }
+.text {
+  z-index: -1;
+  font-size: 5rem;
+}
 
 .green {
   background: $lightgreen;
   transition: all 0.5s;
+  font-family: $font;
 }
 .blue {
   background: #4286f4;
   transition: all 0.5s;
+  font-family: $font;
 }
 .red {
   background: $orange1;
   transition: all 0.5s;
+  font-family: $font;
 }
