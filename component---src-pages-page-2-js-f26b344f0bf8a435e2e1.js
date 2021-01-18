@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{p5nM:function(e,n,a){"use strict";a.r(n);var s=a("q1tI"),t=a.n(s);n.default=function(){return t.a.createElement("div",{className:"second-page"},"This is the Second Page.")}}}]);
+//# sourceMappingURL=component---src-pages-page-2-js-f26b344f0bf8a435e2e1.js.map
