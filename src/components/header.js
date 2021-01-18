@@ -17,7 +17,7 @@ export default function Header() {
           </Link>
         </div>
         <NavMenu nav={nav}>
-          <NavLink to="#">Our Journey</NavLink>
+          <NavLink to="/about">Our Journey</NavLink>
           <NavLink to="/productspage">Products</NavLink>
           <NavLink to="#">Stories</NavLink>
           <NavLink to="#">Contact</NavLink>

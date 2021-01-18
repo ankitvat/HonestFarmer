@@ -13,7 +13,9 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="left-footer">
-        <img src={logo} className="toplogo" alt="oldlogo" />
+        <Link to="/">
+          <img src={logo} className="toplogo" alt="oldlogo" />
+        </Link>
         <img src={oldlogo} className="botlogo" alt="botlogo" />
         <div className="go4lifelink">
           <Link to="#" className="link">
@@ -25,8 +27,8 @@ export default function Footer() {
       <div className="right-footer">
         <div className="footer-links">
           <h1 className="footer-heading">Navigation</h1>
-          <Link to="#">Our Journey</Link>
-          <Link to="#">Products</Link>
+          <Link to="/about">Our Journey</Link>
+          <Link to="/productspage">Products</Link>
           <Link to="#">Stories</Link>
         </div>
         <div className="footer-links">
