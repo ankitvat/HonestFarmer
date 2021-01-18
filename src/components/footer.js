@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="footer-links">
           <h1 className="footer-heading">Company</h1>
           <Link to="#">Terms Of Use</Link>
-          <Link to="#">FAQ</Link>
+          <Link to="/faq">FAQ</Link>
           <Link to="#">Privacy Policy</Link>
         </div>
       </div>

@@ -12,13 +12,13 @@ export default function Header() {
       <Global />
       <nav>
         <div className="nav-logo">
-          <Link to="#">
+          <Link to="/">
             <Logo />
           </Link>
         </div>
         <NavMenu nav={nav}>
           <NavLink to="#">Our Journey</NavLink>
-          <NavLink to="#">Products</NavLink>
+          <NavLink to="/productspage">Products</NavLink>
           <NavLink to="#">Stories</NavLink>
           <NavLink to="#">Contact</NavLink>
           <Download to="https://www.facebook.com">Download the App</Download>
